@@ -123,5 +123,13 @@
             "success": "Nachricht erfolgreich gesendet!",
             "failure": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
         }
+    },
+    "OurProducts": {
+        "title": "Unsere Produkte",
+        "viewAll": "Alle Produkte ansehen",
+        "details": "Details ansehen",
+        "chargingCables": "EV-Ladekabel",
+        "chargingStations": "EV-Ladestationen",
+        "dcChargingStations": "DC-Ladestationen"
     }
 }

@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"),
   title: "Blaupunkt",
   description: "Blaupunkt EV Charging Solutions",
   icons: {

@@ -123,5 +123,13 @@
             "success": "Message sent successfully!",
             "failure": "Failed to send message. Please try again."
         }
+    },
+    "OurProducts": {
+        "title": "Our Products",
+        "viewAll": "View All Products",
+        "details": "See details",
+        "chargingCables": "EV Charging Cables",
+        "chargingStations": "EV Charging Stations",
+        "dcChargingStations": "DC Charging Stations"
     }
 }

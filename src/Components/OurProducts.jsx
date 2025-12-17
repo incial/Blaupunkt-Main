@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import ProductCard from './Common/ProductCard'
 import { useRouter } from 'next/navigation'
 import { chargingCablesData } from '../Data/ChargingCables/data.js'
@@ -8,9 +9,10 @@ import { chargingStationsData } from '../Data/ChargingStations/data.js'
 import { dcChargingStationData } from '../Data/DCChargingStation/data.js'
 
 const OurProducts = () => {
+  const t = useTranslations('OurProducts')
   const router = useRouter()
   // Get the first product model from each category
-  const getFirstProduct = (categoryData, categoryLink) => {
+  const getFirstProduct = (categoryData, categoryLink, titleOverride) => {
     let firstModel = null
 
     // For data structures that expose a flat models array
@@ -47,8 +49,8 @@ const OurProducts = () => {
 
     if (firstModel) {
       return {
-        title: categoryData.title,
-        specifications: buildSpecs(firstModel) || 'See details',
+        title: titleOverride || categoryData.title,
+        specifications: buildSpecs(firstModel) || t('details'),
         productCode: firstModel.modelCode || '',
         image: firstModel.image || categoryData.mainImage,
         link: categoryLink
@@ -56,8 +58,8 @@ const OurProducts = () => {
     }
 
     return {
-      title: categoryData.title,
-      specifications: 'See details',
+      title: titleOverride || categoryData.title,
+      specifications: t('details'),
       productCode: '',
       image: categoryData.mainImage,
       link: categoryLink
@@ -67,15 +69,15 @@ const OurProducts = () => {
   const productData = [
     {
       id: 1,
-      ...getFirstProduct(chargingCablesData, '/charging-cables')
+      ...getFirstProduct(chargingCablesData, '/charging-cables', t('chargingCables'))
     },
     {
       id: 2,
-      ...getFirstProduct(chargingStationsData, '/charging-stations')
+      ...getFirstProduct(chargingStationsData, '/charging-stations', t('chargingStations'))
     },
     {
       id: 3,
-      ...getFirstProduct(dcChargingStationData, '/dc-charging-station')
+      ...getFirstProduct(dcChargingStationData, '/dc-charging-station', t('dcChargingStations'))
     }
   ]
   return (
@@ -86,7 +88,7 @@ const OurProducts = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Section Title */}
         <h2 className='text-3xl sm:text-3xl lg:text-4xl font-semibold text-center text-gray-900 mb-12 sm:mb-16 lg:mb-20'>
-          Our Products
+          {t('title')}
         </h2>{' '}
         {/* Products Grid/Scroll */}
         <div className='block sm:hidden'>
@@ -125,7 +127,7 @@ const OurProducts = () => {
             className='bg-white text-blue-800 px-6 py-3 sm:px-8 sm:py-4 rounded-3xl font-semibold text-base sm:text-lg lg:text-xl hover:bg-gray-50 transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer'
             onClick={() => router.push('/products')}
           >
-            View All Products
+            {t('viewAll')}
           </button>
         </div>
       </div>
