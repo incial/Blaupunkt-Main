@@ -42,9 +42,13 @@ try {
 console.log('📂 Copying .next folder...');
 copyRecursiveSync('.next', path.join(BUILD_DIR, '.next'));
 
-// 4. Copy public folder CONTENTS to root (Flattening public)
-console.log('📂 Copying public folder contents to root...');
-copyRecursiveSync('public', BUILD_DIR);
+// 4. Copy public folder
+console.log('📂 Copying public folder...');
+const publicDest = path.join(BUILD_DIR, 'public');
+if (!fs.existsSync(publicDest)) {
+    fs.mkdirSync(publicDest);
+}
+copyRecursiveSync('public', publicDest);
 
 // 5. Copy essential root files
 console.log('📄 Copying config files...');

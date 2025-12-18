@@ -1,5 +1,7 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
+import { renderToStaticMarkup } from 'react-dom/server';
+import EnquireTemplate from '@/components/emails/EnquireTemplate';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -8,18 +10,20 @@ export async function POST(request) {
         const body = await request.json();
         const { name, email, phone, message } = body;
 
+        const emailHtml = renderToStaticMarkup(
+            <EnquireTemplate
+                name={name}
+                email={email}
+                phone={phone}
+                message={message}
+            />
+        );
+
         const data = await resend.emails.send({
             from: 'Blaupunkt Website <onboarding@resend.dev>', // Update this with verified domain later
             to: [process.env.CONTACT_EMAIL || 'info@blaupunkt-ev.com'],
             subject: `New Contact Form Submission from ${name}`,
-            html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `
+            html: emailHtml
         });
 
         return NextResponse.json({ success: true, data });
