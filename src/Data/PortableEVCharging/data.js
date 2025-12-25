@@ -175,7 +175,8 @@ export const portableEvChargingData = {
             phaseType: 'Single - Phase',
             protectionRating: 'IP54',
             popular: true,
-            image: portableEvChargingImages.portEvPd1
+            image: portableEvChargingImages.portEvPd1,
+            alt: 'Blaupunkt P1PM2T2 Mode 2 Portable EV Charger - 3.7kW, Type 2, Single Phase, 16A'
           },
           {
             modelCode: 'P3PM2T2',
@@ -192,7 +193,8 @@ export const portableEvChargingData = {
             cableLength: '8 Meters',
             phaseType: 'Three - Phase',
             protectionRating: 'IP65',
-            image: portableEvChargingImages.portEvPd1
+            image: portableEvChargingImages.portEvPd1,
+            alt: 'Blaupunkt P3PM2T2 Mode 2 Portable EV Charger - 11kW, Type 2, Three Phase, 16A'
           }
         ]
       }

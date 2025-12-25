@@ -24,22 +24,61 @@ const picture13 = "/assets/Images/companyPage/Picture13.webp";
 const t2T2 = "/assets/Images/companyPage/T2-T2.webp";
 
 export const Servicepage = {
-  ServicesPageImg,
-  Mainbg,
-  Installbg,
-  Chargbg,
+  ServicesPageImg: {
+    src: ServicesPageImg,
+    alt: 'Blaupunkt comprehensive EV charging services and solutions'
+  },
+  Mainbg: {
+    src: Mainbg,
+    alt: 'Professional EV charging installation and maintenance services background'
+  },
+  Installbg: {
+    src: Installbg,
+    alt: 'Expert EV charging station installation service'
+  },
+  Chargbg: {
+    src: Chargbg,
+    alt: 'Reliable EV charging infrastructure and support services'
+  }
 };
 
 export const companyPageImgs = {
-  picture1,
-  picture2,
-  picture3,
-  picture6,
-  picture7,
-  picture12,
-  picture13,
-  t2T2,
-  image: t2T2, // alias for main historical image
+  picture1: {
+    src: picture1,
+    alt: 'Blaupunkt founders - Berlin 1923, visionaries who established the precision engineering heritage'
+  },
+  picture2: {
+    src: picture2,
+    alt: 'Blaupunkt headquarters - Berlin 1938, expanding manufacturing operations across Europe'
+  },
+  picture3: {
+    src: picture3,
+    alt: 'Early automobile radio production line - 1930s innovation in vehicle electronics'
+  },
+  picture6: {
+    src: picture6,
+    alt: 'Post-war reconstruction - 1945-1950 rebuilding German manufacturing excellence'
+  },
+  picture7: {
+    src: picture7,
+    alt: 'Color television era - 1967 technological advancement in consumer electronics'
+  },
+  picture12: {
+    src: picture12,
+    alt: 'Modern Blaupunkt facility - 2000s transition to digital and automotive technologies'
+  },
+  picture13: {
+    src: picture13,
+    alt: 'Blaupunkt global expansion - 2009 entering new markets and product categories'
+  },
+  t2T2: {
+    src: t2T2,
+    alt: 'Blaupunkt Type 2 to Type 2 EV charging cable - premium electric vehicle charging solution'
+  },
+  image: {
+    src: t2T2,
+    alt: 'Blaupunkt historical milestones and company heritage'
+  }
 };
 
 //================================================================================
@@ -113,6 +152,48 @@ export const chargingImgs = {
   evGeneral: chargingCableImages.main,
   productImage: chargingCableImages.main,
 };
+
+// =============================================================================
+// CATEGORY DATA (For Category Section)
+// =============================================================================
+
+export const categoryData = [
+  {
+    id: 1,
+    title: 'EV Charging Cables',
+    image: chargingCableImages.main,
+    alt: 'EV charging cables for electric vehicles in UAE',
+    path: '/charging-cables'
+  },
+  {
+    id: 2,
+    title: 'Charging Stations',
+    image: chargingStationImages.main,
+    alt: 'EV charging station for home and commercial use',
+    path: '/charging-stations'
+  },
+  {
+    id: 3,
+    title: 'DC Charging Station',
+    image: dcChargingStationImages.main,
+    alt: 'DC EV charging station for fast charging in UAE',
+    path: '/dc-charging-station'
+  },
+  {
+    id: 4,
+    title: 'DC Super fast Charger',
+    image: dcSuperFastChargingStationImages.main,
+    alt: 'DC super fast EV charger for commercial use',
+    path: '/dc-super-fast-charging-station'
+  },
+  {
+    id: 5,
+    title: 'Portable EV Charging',
+    image: portableEvChargingImages.main,
+    alt: 'Portable EV charger for home and travel use',
+    path: '/portable-ev-charging'
+  }
+];
 
 // =============================================================================
 // EV CHARGING CABLES IMAGES

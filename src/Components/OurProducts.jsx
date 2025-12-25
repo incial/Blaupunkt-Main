@@ -53,6 +53,7 @@ const OurProducts = () => {
         specifications: buildSpecs(firstModel) || t('details'),
         productCode: firstModel.modelCode || '',
         image: firstModel.image || categoryData.mainImage,
+        alt: firstModel.alt || `${titleOverride || categoryData.title} - ${firstModel.modelCode || 'Blaupunkt EV charging solution'}`,
         link: categoryLink
       }
     }
@@ -62,6 +63,7 @@ const OurProducts = () => {
       specifications: t('details'),
       productCode: '',
       image: categoryData.mainImage,
+      alt: categoryData.imageAlt || `${titleOverride || categoryData.title} - Blaupunkt EV charging solution`,
       link: categoryLink
     }
   }
@@ -101,6 +103,7 @@ const OurProducts = () => {
                   specifications={product.specifications}
                   productCode={product.productCode}
                   image={product.image}
+                  alt={product.alt}
                   onClick={() => router.push(product.link)}
                 />
               </div>
@@ -116,6 +119,7 @@ const OurProducts = () => {
                 specifications={product.specifications}
                 productCode={product.productCode}
                 image={product.image}
+                alt={product.alt}
                 onClick={() => router.push(product.link)}
               />
             </div>

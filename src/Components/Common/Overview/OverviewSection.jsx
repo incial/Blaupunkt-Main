@@ -55,7 +55,7 @@ const OverviewSection = ({ overviewData }) => {
           <div className='flex justify-center'>
             <img
               src={overviewData.image}
-              alt='Overview'
+              alt='Product overview and features'
               className='max-w-full h-auto rounded-lg shadow-lg'
               loading='lazy'
             />

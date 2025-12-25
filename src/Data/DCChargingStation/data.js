@@ -170,7 +170,8 @@ export const dcChargingStationData = {
         ratedCurrent: '5-100 A',
         connectorPin: 'CCS2',
         popular: true,
-        image: dcChargingStationImages.dcPd1
+        image: dcChargingStationImages.dcPd1,
+        alt: 'Blaupunkt DC charging station 30kW CCS2 wall mounted'
       },
       {
         modelCode: 'BPDC40KEU',
@@ -178,7 +179,8 @@ export const dcChargingStationData = {
         ratedCurrent: '5-100 A',
         connectorPin: 'CCS2',
         popular: false,
-        image: dcChargingStationImages.dcPd2
+        image: dcChargingStationImages.dcPd2,
+        alt: 'Blaupunkt BPDC40KEU DC Fast Charging Station - 40kW, CCS2 Connector, 5-100A'
       }
     ]
   },

@@ -16,7 +16,8 @@ const Services = () => {
       title: 'Charging Solutions',
       description:
         'Blaupunkt offers a wide range of high-performance EV charging products tailored for homes, businesses, and public spaces. From portable chargers to DC fast charging stations, our solutions are built for efficiency, safety, and seamless user experience.',
-      image: Servicepage.Chargbg,
+      image: Servicepage.Chargbg.src,
+      alt: Servicepage.Chargbg.alt,
       showLearnMore: true
     },
     {
@@ -24,7 +25,8 @@ const Services = () => {
       title: 'Installation Services',
       description:
         "Our certified partners provide professional installation services to ensure your EV charging setup is safe, compliant, and optimized for performance. We handle everything from site inspection to final setup—whether it's a home garage or a commercial lot.",
-      image: Servicepage.Installbg,
+      image: Servicepage.Installbg.src,
+      alt: Servicepage.Installbg.alt,
       showLearnMore: false
     },
     {
@@ -32,7 +34,8 @@ const Services = () => {
       title: 'Maintenance & Support',
       description:
         'Blaupunkt stands by your side even after installation. Our maintenance services include regular inspections, system updates, and on-call support to ensure uninterrupted performance and peace of mind.',
-      image: Servicepage.Mainbg,
+      image: Servicepage.Mainbg.src,
+      alt: Servicepage.Mainbg.alt,
       showLearnMore: false
     }
   ]
@@ -68,7 +71,7 @@ const Services = () => {
             <div className='relative h-25 mb-2'>
               <img
                 src={service.image}
-                alt={service.title}
+                alt={service.alt}
                 className='w-full h-full object-cover'
                 loading='lazy'
               />
@@ -159,8 +162,8 @@ const Services = () => {
           <div className='lg:w-[360px]'>
             <div className='rounded-xl h-full w-full overflow-hidden bg-gray-200'>
               <img
-                src={Servicepage.ServicesPageImg}
-                alt='Blaupunkt EV Charging Station'
+                src={Servicepage.ServicesPageImg.src}
+                alt={Servicepage.ServicesPageImg.alt}
                 className='w-full h-full object-cover'
                 loading='lazy'
               />

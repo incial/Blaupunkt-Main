@@ -88,7 +88,7 @@ const OverviewFeatureasandideal = ({ overviewData }) => {
               <div className='flex-[2] flex justify-center items-center'>
                 <img
                   src={overviewData.IdealandFeaturesImage}
-                  alt='Features and Ideal Use Cases'
+                  alt='EV charging station features and ideal use cases'
                   className='w-full h-auto rounded-lg object-cover'
                   loading='lazy'
                   style={{

@@ -189,7 +189,8 @@ export const chargingStationsData = {
                 current: '32A',
                 cableLength: '5 Meters',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Wall mounted EV charging station for home'
               },
               {
                 modelCode: 'BW3P16ACB',
@@ -197,7 +198,8 @@ export const chargingStationsData = {
                 current: '16A',
                 cableLength: '5 Meters',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW3P16ACB AC Charging Station with Cable - 11kWh, 16A, Three Phase, 5 Meters, Basic'
               },
               {
                 modelCode: 'BW1P32ACB',
@@ -205,7 +207,8 @@ export const chargingStationsData = {
                 current: '32A',
                 cableLength: '5 Meters',
                 phaseType: 'Single - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW1P32ACB AC Charging Station with Cable - 7.4kWh, 32A, Single Phase, 5 Meters, Basic'
               }
             ]
           },
@@ -220,7 +223,8 @@ export const chargingStationsData = {
                 current: '32A',
                 cableLength: '5 Meters',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW3P32ACS AC Charging Station with Cable - 22kWh, 32A, Three Phase, 5 Meters, Smart'
               },
               {
                 modelCode: 'BW3P16ACS',
@@ -228,7 +232,8 @@ export const chargingStationsData = {
                 current: '16A',
                 cableLength: '5 Meters',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW3P16ACS AC Charging Station with Cable - 11kWh, 16A, Three Phase, 5 Meters, Smart'
               },
               {
                 modelCode: 'BW1P32ACS',
@@ -236,7 +241,8 @@ export const chargingStationsData = {
                 current: '32A',
                 cableLength: '5 Meters',
                 phaseType: 'Single - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW1P32ACS AC Charging Station with Cable - 7.4kWh, 32A, Single Phase, 5 Meters, Smart'
               }
             ]
           },
@@ -251,7 +257,8 @@ export const chargingStationsData = {
                 current: '32A',
                 cableLength: '5 Meters',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW3P32ACF AC Charging Station with Cable - 22kWh, 32A, Three Phase, 5 Meters, Full'
               },
               {
                 modelCode: 'BW3P16ACF',
@@ -259,7 +266,8 @@ export const chargingStationsData = {
                 current: '16A',
                 cableLength: '5 Meters',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW3P16ACF AC Charging Station with Cable - 11kWh, 16A, Three Phase, 5 Meters, Full'
               },
               {
                 modelCode: 'BW1P16ACF',
@@ -267,7 +275,8 @@ export const chargingStationsData = {
                 current: '16A',
                 cableLength: '5 Meters',
                 phaseType: 'Single - Phase',
-                image: chargingStationImages.stationPd1
+                image: chargingStationImages.stationPd1,
+                alt: 'Blaupunkt BW1P16ACF AC Charging Station with Cable - 11kWh, 16A, Single Phase, 5 Meters, Full'
               }
             ]
           }
@@ -287,7 +296,8 @@ export const chargingStationsData = {
                 current: '32A',
                 socketType: 'Type 2',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW3P32ACB AC Charging Station with Socket - 22kWh, 32A, Type 2 Socket, Three Phase, Basic'
               },
               {
                 modelCode: 'BW3P16ACB',
@@ -295,7 +305,8 @@ export const chargingStationsData = {
                 current: '16A',
                 socketType: 'Type 2',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW3P16ACB AC Charging Station with Socket - 11kWh, 16A, Type 2 Socket, Three Phase, Basic'
               },
               {
                 modelCode: 'BW1P32ACB',
@@ -303,7 +314,8 @@ export const chargingStationsData = {
                 current: '32A',
                 socketType: 'Type 2',
                 phaseType: 'Single - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW1P32ACB AC Charging Station with Socket - 7.4kWh, 32A, Type 2 Socket, Single Phase, Basic'
               }
             ]
           },
@@ -318,7 +330,8 @@ export const chargingStationsData = {
                 current: '32A',
                 socketType: 'Type 2',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW3P32ACS AC Charging Station with Socket - 22kWh, 32A, Type 2 Socket, Three Phase, Smart'
               },
               {
                 modelCode: 'BW3P16ACS',
@@ -326,7 +339,8 @@ export const chargingStationsData = {
                 current: '16A',
                 socketType: 'Type 2',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW3P16ACS AC Charging Station with Socket - 11kWh, 16A, Type 2 Socket, Three Phase, Smart'
               },
               {
                 modelCode: 'BW1P32ACS',
@@ -334,7 +348,8 @@ export const chargingStationsData = {
                 current: '32A',
                 socketType: 'Type 2',
                 phaseType: 'Single - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW1P32ACS AC Charging Station with Socket - 7.4kWh, 32A, Type 2 Socket, Single Phase, Smart'
               }
             ]
           },
@@ -349,7 +364,8 @@ export const chargingStationsData = {
                 current: '32A',
                 socketType: 'Type 2',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW3P32ACF AC Charging Station with Socket - 22kWh, 32A, Type 2 Socket, Three Phase, Full'
               },
               {
                 modelCode: 'BW3P16ACF',
@@ -357,7 +373,8 @@ export const chargingStationsData = {
                 current: '16A',
                 socketType: 'Type 2',
                 phaseType: 'Three - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW3P16ACF AC Charging Station with Socket - 11kWh, 16A, Type 2 Socket, Three Phase, Full'
               },
               {
                 modelCode: 'BW1P16ACF',
@@ -365,7 +382,8 @@ export const chargingStationsData = {
                 current: '16A',
                 socketType: 'Type 2',
                 phaseType: 'Single - Phase',
-                image: chargingStationImages.stationPd2
+                image: chargingStationImages.stationPd2,
+                alt: 'Blaupunkt BW1P16ACF AC Charging Station with Socket - 11kWh, 16A, Type 2 Socket, Single Phase, Full'
               }
             ]
           }

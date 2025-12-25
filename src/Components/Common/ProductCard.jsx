@@ -8,6 +8,7 @@ const ProductCard = ({
   addBorder = false,
   onClick,
   product,
+  alt,
 }) => {
   return (
     <div
@@ -24,15 +25,15 @@ const ProductCard = ({
         style={{ borderRadius: "15px" }}
       >
         {/* Rectangle 73 - Product Image Container */}
-        <div
-          className="absolute top-1 left-1 right-1 h-[280px] sm:h-[300px] bg-cover object-cover bg-center bg-no-repeat border border-white "
-          style={{
-            backgroundImage: image ? `url(${image})` : "none",
-            backgroundColor: "#D9D9D9",
-            borderRadius: "13px",
-            objectFit: "cover",
-          }}
-        />
+        <div className="absolute top-1 left-1 right-1 h-[280px] sm:h-[300px] border border-white overflow-hidden" style={{ borderRadius: "13px" }}>
+          <img
+            src={image || ''}
+            alt={alt || `${title} - Blaupunkt EV charging product`}
+            className="w-full h-full object-cover"
+            style={{ backgroundColor: "#D9D9D9" }}
+            loading="lazy"
+          />
+        </div>
         {/* Text Content Container */}
         <div className="absolute bottom-2 sm:bottom-6 left-2 sm:left-6 right-2 sm:right-6 bg-white bg-opacity-95 rounded-lg p-2 sm:p-3">
           {/* Product Code - Top Right Corner of Text Area */}

@@ -3,15 +3,20 @@ import React from 'react'
 const Card = ({
   image,
   title,
+  alt,
   gradient = 'from-[#5E90BC]/0 to-[#5E90BC]/70'
 }) => {
   return (
     <div className='group relative w-full max-w-[180px] sm:max-w-[280px] lg:max-w-[360px] h-[240px] sm:h-[350px] lg:h-[550px] rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95 touch-manipulation'>
       {/* Background Image */}
-      <div
-        className='absolute inset-0 bg-cover bg-center bg-gray-300'
-        style={{ backgroundImage: image ? `url(${image})` : 'none' }}
-      />
+      {image && (
+        <img
+          src={image}
+          alt={alt || `${title} - Blaupunkt EV charging solution`}
+          className='absolute inset-0 w-full h-full object-cover bg-gray-300'
+          loading='lazy'
+        />
+      )}
       {/* Gradient Overlay */}
       <div className={`absolute inset-0 bg-gradient-to-b ${gradient}`} />{' '}
       {/* Content */}

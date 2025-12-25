@@ -13,14 +13,16 @@ const Company = () => {
       year: "1923",
       description:
         '"Ideal", a radio manufacturer was first founded in Berlin when radio was still in its infancy. Every unit was carefully tested and labeled with a seal of quality, the blue dot. It did not take long before customers simply asked for the "mit dern Blaupunkt" products. The blue dot quickly became known as a symbol of outstanding quality.',
-      image: companyPageImgs.picture2,
+      image: companyPageImgs.picture2.src,
+      alt: companyPageImgs.picture2.alt,
       position: "right",
     },
     {
       year: "1932",
       description:
         "The first car radio in the world was launched by BLAUPUNKT.",
-      image: companyPageImgs.picture1,
+      image: companyPageImgs.picture1.src,
+      alt: companyPageImgs.picture1.alt,
       position: "left",
     },
     {
@@ -36,7 +38,8 @@ const Company = () => {
       title: "It all started with the blue dot.",
       description:
         "Blaupunkt began its journey with iconic products like headphones, car radios, and world receivers—marking the start of a legacy defined by quality, innovation, and precision.",
-      image: companyPageImgs.picture6,
+      image: companyPageImgs.picture6.src,
+      alt: companyPageImgs.picture6.alt,
     },
     {
       period: "1950s - 1997",
@@ -49,14 +52,18 @@ const Company = () => {
       title: "The advantage in your car.",
       description:
         "Over time, Blaupunkt refined its focus on automotive excellence—specializing in in-vehicle entertainment, GPS solutions, and premium systems for professional coaches and trucks. This dedication set new benchmarks for performance and reliability on the road.",
-      images: [companyPageImgs.picture13, companyPageImgs.picture7],
+      images: [
+        { src: companyPageImgs.picture13.src, alt: companyPageImgs.picture13.alt },
+        { src: companyPageImgs.picture7.src, alt: companyPageImgs.picture7.alt }
+      ],
     },
     {
       period: "Since 2009",
       title: "Enjoy it. The Blaupunkt global brand community.",
       description:
         'Today, "The advantage in your car" has grown into "The advantage in your life." Blaupunkt now offers a diverse range of consumer electronics, home appliances, security solutions, and wellness products—bringing trusted innovation to every aspect of modern living.',
-      image: companyPageImgs.picture12,
+      image: companyPageImgs.picture12.src,
+      alt: companyPageImgs.picture12.alt,
     },
   ];
 
@@ -85,16 +92,16 @@ const Company = () => {
             <div className="flex justify-between items-center mb-8">
               <img
                 className="w-[97px] h-[125px]"
-                alt="T t"
-                src={companyPageImgs.t2T2}
+                alt={companyPageImgs.t2T2.alt}
+                src={companyPageImgs.t2T2.src}
                 loading='lazy'
                 width='97'
                 height='125'
               />
               <img
                 className="w-28 h-[125px]"
-                alt="Picture"
-                src={companyPageImgs.picture2}
+                alt={companyPageImgs.picture2.alt}
+                src={companyPageImgs.picture2.src}
                 loading='lazy'
                 width='112'
                 height='125'
@@ -114,11 +121,11 @@ const Company = () => {
             <div className="w-full flex justify-center mb-8">
               <img
                 className="w-full max-w-[320px] h-[275px] object-cover"
-                alt="Historical image"
+                alt={companyPageImgs.picture3.alt}
                 loading='lazy'
                 width='320'
                 height='275'
-                src={companyPageImgs.picture3}
+                src={companyPageImgs.picture3.src}
               />
             </div>
           </header>
@@ -140,8 +147,8 @@ const Company = () => {
                 {index === 0 && (
                   <img
                     className="w-full h-36 object-cover"
-                    alt="Picture"
-                    src={companyPageImgs.picture1}
+                    alt={companyPageImgs.picture1.alt}
+                    src={companyPageImgs.picture1.src}
                     loading='lazy'
                     width='320'
                     height='144'
@@ -170,19 +177,19 @@ const Company = () => {
                   <div className="flex gap-4 w-full justify-center">
                     <img
                       className="w-[137px] h-[185px] object-cover"
-                      alt="Picture"
-                      src={companyPageImgs.picture7}
+                      alt={companyPageImgs.picture7.alt}
+                      src={companyPageImgs.picture7.src}
                       loading='lazy'
                       width='137'
                       height='185'
                     />
                     <img
                       className="w-[137px] h-[185px] object-cover"
-                      alt="Picture"
+                      alt={companyPageImgs.picture6.alt}
                       loading='lazy'
                       width='137'
                       height='185'
-                      src={companyPageImgs.picture6}
+                      src={companyPageImgs.picture6.src}
                     />
                   </div>
                 )}
@@ -191,8 +198,10 @@ const Company = () => {
                   <div
                     className="w-full h-[123px] bg-cover bg-center"
                     style={{
-                      backgroundImage: `url(${companyPageImgs.picture12})`,
+                      backgroundImage: `url(${companyPageImgs.picture12.src})`,
                     }}
+                    role="img"
+                    aria-label={companyPageImgs.picture12.alt}
                   />
                 )}
               </section>
@@ -243,8 +252,8 @@ const Company = () => {
           {/* Historical Images */}
           <img
             className="absolute w-[397px] h-[507px] top-[241px] lg:top-[249px] left-4 lg:left-8 xl:left-[209px]"
-            alt="Historical Blaupunkt image"
-            src={companyPageImgs.t2T2}
+            alt={companyPageImgs.t2T2.alt}
+            src={companyPageImgs.t2T2.src}
             loading='lazy'
             width='397'
             height='507'
@@ -252,8 +261,8 @@ const Company = () => {
 
           <img
             className="absolute w-[513px] h-[477px] top-[587px] lg:top-[595px] right-4 lg:right-8 xl:right-[209px]"
-            alt="Historical image"
-            src={companyPageImgs.picture3}
+            alt={companyPageImgs.picture3.alt}
+            src={companyPageImgs.picture3.src}
             loading='lazy'
             width='513'
             height='477'
@@ -263,8 +272,8 @@ const Company = () => {
           <div className="absolute w-[519px] h-[299px] top-[243px] lg:top-[251px] right-4 lg:right-8 xl:right-[209px]">
             <img
               className="absolute w-[97px] h-[108px] top-0 left-[373px]"
-              alt="Picture"
-              src={companyPageImgs.picture2}
+              alt={companyPageImgs.picture2.alt}
+              src={companyPageImgs.picture2.src}
               loading='lazy'
               width='97'
               height='108'
@@ -357,8 +366,8 @@ const Company = () => {
           {/* Additional Historical Images */}
           <img
             className="absolute w-[397px] h-[537px] top-[1181px] lg:top-[1189px] left-4 lg:left-8 xl:left-[209px]"
-            alt="Historical Blaupunkt picture"
-            src={companyPageImgs.picture6}
+            alt={companyPageImgs.picture6.alt}
+            src={companyPageImgs.picture6.src}
             loading='lazy'
             width='397'
             height='537'
@@ -366,8 +375,8 @@ const Company = () => {
 
           <img
             className="absolute w-[395px] h-48 top-[793px] lg:top-[801px] left-4 lg:left-8 xl:left-[211px]"
-            alt="Historical picture"
-            src={companyPageImgs.picture1}
+            alt={companyPageImgs.picture1.alt}
+            src={companyPageImgs.picture1.src}
             loading='lazy'
             width='395'
             height='192'
@@ -393,19 +402,19 @@ const Company = () => {
 
             <img
               className="absolute w-[609px] h-64 top-[42px] right-0 lg:right-8 xl:right-0 xl:left-[421px]"
-              alt="Modern Blaupunkt products"
+              alt={companyPageImgs.picture12.alt}
               loading='lazy'
               width='609'
               height='256'
-              src={companyPageImgs.picture12}
+              src={companyPageImgs.picture12.src}
             />
           </section>
 
           {/* Additional Product Images */}
           <img
             className="absolute w-[177px] h-[271px] top-[1763px] lg:top-[1771px] left-4 lg:left-8 xl:left-[217px]"
-            alt="Product picture"
-            src={companyPageImgs.picture13}
+            alt={companyPageImgs.picture13.alt}
+            src={companyPageImgs.picture13.src}
             loading='lazy'
             width='177'
             height='271'
@@ -413,8 +422,8 @@ const Company = () => {
 
           <img
             className="absolute w-[149px] h-[216px] top-[1818px] lg:top-[1826px] left-[220px] lg:left-[280px] xl:left-[457px]"
-            alt="Product picture"
-            src={companyPageImgs.picture7}
+            alt={companyPageImgs.picture7.alt}
+            src={companyPageImgs.picture7.src}
             loading='lazy'
             width='149'
             height='216'

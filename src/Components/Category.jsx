@@ -3,40 +3,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Card from './Common/Card'
-import { chargingImgs } from '../Data/assets.js'
+import { categoryData } from '../Data/assets.js'
 
 const Category = () => {
-  const categoryData = [
-    {
-      id: 1,
-      title: 'EV Charging Cables',
-      image: chargingImgs.evGeneral,
-      path: '/charging-cables'
-    },
-    {
-      id: 2,
-      title: 'Charging Stations',
-      image: chargingImgs.stations,
-      path: '/charging-stations'
-    },
-    {
-      id: 3,
-      title: 'DC Charging Station',
-      image: chargingImgs.dcStation,
-      path: '/dc-charging-station'
-    }, {
-      id: 4,
-      title: 'DC Super fast Charger',
-      image: chargingImgs.dcSuperFast,
-      path: '/dc-super-fast-charging-station'
-    },
-    {
-      id: 5,
-      title: 'Portable EV Charging',
-      image: chargingImgs.portable,
-      path: '/portable-ev-charging'
-    }
-  ]
   return (
     <div className='py-8 sm:py-12 lg:py-16 px-8 sm:px-6 lg:px-8 bg-gray-50'>
       <div className='max-w-7xl mx-auto'>
@@ -52,7 +21,7 @@ const Category = () => {
               href={category.path}
               className='w-full h-full'
             >
-              <Card title={category.title} image={category.image} />
+              <Card title={category.title} image={category.image} alt={category.alt} />
             </Link>
           ))}
         </div>
