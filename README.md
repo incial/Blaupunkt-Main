@@ -1,38 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+<br><br>
 
-First, run the development server:
+<picture>
+  <source srcset="./src/assets/Images/Readme/Header.svg">
+  <img src="./src/assets/Images/Readme/Header.svg" alt="Blaupunkt EV header" width="1000">
+</picture>
+
+<br>
+
+<strong>EV charging products, downloads, and support — in one multilingual hub.</strong>
+<br />
+<sub>Explore AC/DC stations, portable chargers, cables, and documentation for Blaupunkt customers.</sub>
+
+<br><br>
+  <a href="#">
+    <img alt="Framework" src="https://img.shields.io/badge/Next.js-16-000?logo=next.js&logoColor=white">
+  </a>
+  <a href="#">
+    <img alt="Styling" src="https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white">
+  </a>
+  <a href="#">
+    <img alt="Localization ready" src="https://img.shields.io/badge/Localization-next--intl-2563eb">
+  </a>
+  <a href="#">
+    <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
+  </a>
+
+<br>
+
+<a href="docs/DOCUMENTATION.md">📖 Documentation</a> ·
+<a href="docs/QUICKSTART.md">⚡ Quick Start</a> ·
+<a href="docs/FEATURES.md">🛠️ Features</a>
+
+</div>
+
+<br />
+
+<div align="center">
+  <img src="./src/assets/Images/Readme/Content-image.svg"
+       alt="Blaupunkt website preview"
+       width="1000">
+</div>
+
+<br />
+
+---
+
+## ✨ Why this project?
+
+This repository powers the Blaupunkt EV charging site, bringing product catalogs, downloads, and contact options together in a single, localized experience.
+
+> 🌍 Multi-language catalog · ⚡ AC/DC charging portfolio · 📄 Downloadable specs · 📬 Contact with Graph API backend
+
+---
+
+## 🚀 Core highlights
+
+- Product-first experience for AC/DC stations, super-fast chargers, portable units, and cables
+- Localization-ready App Router setup with `next-intl`
+- Data-driven product configs for specs, assets, and downloads
+- Tailwind CSS v4 with modern Next.js 16 runtime
+- Contact workflows handled by a Next.js API route using the Resend email API
+- Optimized images and assets for fast page delivery
+
+See more in [docs/FEATURES.md](docs/FEATURES.md).
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=next,react,tailwind,js" alt="Tech Stack" />
+
+</div>
+
+- Next.js 16 (App Router) with React 19
+- Tailwind CSS 4, PostCSS
+- `next-intl` for routing and translations
+- Framer Motion for animations
+- PDF generation/download helpers (`pdf-lib`, `file-saver`)
+- PHP endpoints for contact handling (under `public/api`)
+
+---
+
+## 📦 Installation & usage
+
+This app runs with Node 18+ (Next.js 16). `pnpm` is recommended.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/incial/Blaupunkt-Main.git
+cd Blaupunkt-Main
+pnpm install
+
+# Development
 pnpm dev
-# or
-bun dev
+
+# Production build
+pnpm build
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License — see [LICENSE](LICENSE).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<div align="center">
+	**Built with care for the Blaupunkt EV community**
 
-## Deploy on Vercel
+<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Blaupunkt_next
-# Blaupunkt_next
+	⭐ Star the repo if you find it helpful!
+</div>
